@@ -1,0 +1,6 @@
+#---AWESOME
+
+# Flameshot
+super + shift + s
+    flameshot gui
+    
