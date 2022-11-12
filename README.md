@@ -30,7 +30,6 @@ yay -S picom-jonaburg-git lain-git pulseaudio-ctl
 |      Key      |     Action    |
 | ------------- | ------------- |
 | Modkey+shift+s| flameshot gui |
-| Content Cell  | Content Cell  |
 
 
 #### awesomewm
