@@ -19,7 +19,7 @@ yay -S picom-jonaburg-git lain-git pulseaudio-ctl
 ```
 4. Install fonts
 ```
-
+sudo pacman -S jetbrains 
 ```
 
 ## Usage
