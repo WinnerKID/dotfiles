@@ -6,7 +6,7 @@
 
 1. Download awesomewm
 ```
-sudo pacman -S awesomewm
+sudo pacman -S awesome
 ```
 2. Install software
 ```
@@ -37,4 +37,6 @@ sudo pacman -S jetbrains
 | ------------- | ------------- |
 |  Modkey+spce  |      rofi     |
 |   Modkey+b    | toggle topbar |
+
+
 
