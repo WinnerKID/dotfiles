@@ -1,6 +1,12 @@
 configuration {
     modi: "window,ssh,drun,combi";
+    font: "Jetbrains-mono 13";
     combi-modi: "window,drun,ssh";
+    show-combi: true;
+    show-theme: "Papirus";
+    show-icons: true;
+    display-combi: " ";
+    
   timeout {
       action: "kb-cancel";
       delay:  0;
@@ -10,4 +16,115 @@ configuration {
       sorting-method:    "name";
   }
 }
-@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
+
+@theme "/usr/share/rofi/themes/arthur.rasi"
+
+
+* {
+    foreground:       rgba ( 255, 238, 221, 100 % );
+    lightyellow:      rgba ( 255, 167, 93, 100 % );
+    red:              IndianRed;
+    tcyan:            rgba ( 204, 176, 196, 87 % );
+    blue:             CornflowerBlue;
+    lightgreen:       rgba ( 136, 204, 34, 100 % );
+    green:            rgba ( 134, 175, 128, 100 % );
+    background-color: transparent;
+    lightred:         rgba ( 204, 85, 51, 100 % );
+    font:             "Jetbrains-mono 10";
+    magenta:          BurlyWood;
+    tlightblack:      rgba ( 85, 68, 68, 80 % );
+    dark:             rgba ( 28, 28, 28, 100 % );
+    lightblack:       rgba ( 85, 68, 68, 100 % );
+    backlight:        rgba ( 204, 255, 238, 87 % );
+    black:            rgba ( 61, 53, 42, 100 % );
+    transparent:      transparent;
+    lightcyan:        LightSteelBlue;
+    lightmagenta:     rgba ( 153, 102, 0, 100 % );
+    lightwhite:       rgba ( 221, 204, 187, 100 % );
+    cyan:             LightSteelBlue;
+    white:            rgba ( 187, 170, 153, 100 % );
+    yellow:           rgba ( 232, 174, 91, 100 % );
+    lightblue:        SkyBlue;
+    highlight:        bold underline White;
+}
+
+entry {
+
+    placeholder: "Type here...";
+    cursor: pointer;
+
+}
+
+element {
+
+  orientation: horizontal;
+
+
+  children: [ element-text, element-icon ];
+
+  spacing: 5px;
+}
+
+element-icon {
+
+    size: 1.5em;
+}
+
+element-text {
+
+    vertical-align: 0.5;
+}
+
+entry, element-text {
+
+  text-color: white;
+
+}
+
+listview {
+    padding:          8px ;
+    background-color: rgba ( 28, 28, 28, 80 % );
+    dynamic:          false;
+    border-color:     rgb(64,224,208);
+    lines:            8;
+    border-radius:    0px 0px 15px 15px ;
+    border:           0px 3px 3px ;
+}
+
+inputbar {
+    padding:          11px ;
+    background-color: rgba ( 28, 28, 28, 100 % );
+    text-color:       LightSteelBlue;
+    font:             "Jetbrains-mono 10";
+    border-color:     rgb(64,224,208);
+    border:           3px ;
+    border-radius:    15px 15px 0px 0px ;
+}
+
+element selected.normal {
+    background-color: rgba ( 61, 53, 42, 100 % );
+}
+element selected.active {
+    foreground:       var(dark);
+    background-color: rgb(0,206,209);
+}
+element selected.urgent {
+    foreground:       var(dark);
+    background-color: var(lightred);
+}
+element normal.active {
+    foreground: var(lightblue);
+}
+element normal.urgent {
+    foreground: var(lightred);
+}
+element alternate.active {
+    foreground: var(lightblue);
+}
+element alternate.urgent {
+    foreground: var(lightred);
+}
+
+
+
+
