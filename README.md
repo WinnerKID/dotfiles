@@ -11,7 +11,7 @@ sudo pacman -S awesome
 2. Install software
 ```
 sudo pacman -S rofi alacritty feh papirus-icon-theme flameshot sxhkd cava neofetch 
-yay -S picom-jonaburg-git lain-git pulseaudio-ctl
+yay -S picom lain-git pulseaudio-ctl
 ```
 3. Install themes
 ```
