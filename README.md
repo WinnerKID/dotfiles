@@ -19,7 +19,7 @@ yay -S picom lain-git pulseaudio-ctl
 ```
 4. Install fonts
 ```
-sudo pacman -S jetbrains 
+sudo pacman -S ttf-jetbrains-mono ttf-font-awesome 
 ```
 
 ## Usage
