@@ -122,7 +122,8 @@ mykeyboardlayout = awful.widget.keyboardlayout()
 -- Create a textclock widget
 local calendar_widget = require("awesome-wm-widgets.calendar-widget.calendar")
 
-mytextclock = wibox.widget.textclock()
+mytextclock = wibox.widget.textclock(
+	" %a %b %d,%l:%M%P", 50)
 -- default
 local cw = calendar_widget()
 -- or customized
@@ -311,7 +312,6 @@ mytemp = wibox.widget {
 				layout = wibox.layout.fixed.horizontal,
 				spacer,
 				mylauncher,
-				spacer,
 				spacerline,
 				spacer,
 			},
