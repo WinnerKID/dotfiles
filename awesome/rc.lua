@@ -592,6 +592,19 @@ awful.rules.rules = {
                      placement = awful.placement.no_overlap+awful.placement.no_offscreen
      }
     },
+	
+{
+		rule_any = { class = { "Steam" } },
+		properties = {
+			titlebars_enabled = false,
+			floating = true,
+			border_width = 0,
+			border_color = 0,
+			size_hints_honor = false,
+		},
+	},
+    { rule = { class = "steam_app_1172470" },
+  properties = { fullscreen = true } },
 
     -- Floating clients.
     { rule_any = {
