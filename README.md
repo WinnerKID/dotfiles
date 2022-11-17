@@ -10,8 +10,8 @@ sudo pacman -S awesome
 ```
 2. Install software
 ```
-sudo pacman -S rofi alacritty feh papirus-icon-theme flameshot sxhkd cava neofetch lxappearance lxsession
-yay -S picom lain-git pulseaudio-ctl
+sudo pacman -S rofi alacritty feh papirus-icon-theme flameshot sxhkd neofetch lxappearance lxsession
+yay -S picom lain-git pulseaudio-ctl cava
 ```
 3. Install themes
 ```
